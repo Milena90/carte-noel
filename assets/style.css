@@ -1,0 +1,984 @@
+body{margin:0;height:100%;}
+canvas{
+    position:absolute;top:0;left:0
+    background-image: linear-gradient(bottom, rgb(0,150,205) 0%, rgb(1,23,64) 84%);
+    background-image: -o-linear-gradient(bottom, rgb(0,150,205) 0%, rgb(1,23,64) 84%);
+    background-image: -moz-linear-gradient(bottom, rgb(0,150,205) 0%, rgb(1,23,64) 84%);
+    background-image: -webkit-linear-gradient(bottom, rgb(0,150,205) 0%, rgb(1,23,64) 84%);
+    background-image: -ms-linear-gradient(bottom, rgb(0,150,205) 0%, rgb(1,23,64) 84%);
+    
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, rgb(0,150,205)),
+        color-stop(0.84, rgb(1,23,64))
+    );
+}
+/* XXXXXXXXXXXXXXXXXX FIN NEIGE QUI TOMBE XXXXXXXXXXXXXXXXXX */
+
+ul {
+    display: table;
+    list-style: none;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 0;
+}
+ ul li {
+    display: inline-block;
+    float: left;
+ }
+
+.santaclaus {
+    display: block;
+    margin: 0 auto;
+    max-width: 500px;
+    text-align: center;
+}
+
+.santaclaus > div {
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+.santaclaus .chapeu {
+    display: block;
+    position: relative;
+    width: 310px;
+    z-index: 99;
+}
+
+.santaclaus .chapeu .cone-1 {
+    border-left: 50px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 70px solid #D32F2F;
+}
+
+.santaclaus .chapeu .cone-2 {
+    background-color:  #D32F2F;
+    border-top: 0px solid transparent;
+    border-right: 340px solid #D32F2F;
+    border-bottom: 100px solid transparent;
+    border-color: transparent;
+    box-shadow: -25px 15px 30px -5px rgba(1,1,1,0.3);
+    position: relative;
+    left: -56px;
+    top: 49px;
+
+    -webkit-transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+
+    -webkit-border-radius: 30% 100% 0 100%;
+    -moz-border-radius: 30% 100% 0 100%;
+    border-radius: 30% 100% 0 100%;
+}
+
+.santaclaus .chapeu::after,
+.santaclaus .chapeu::before {
+    background-color: #fff;
+    content: " ";
+    display: block;
+}
+
+.santaclaus .chapeu::after {
+    box-shadow: 0px -15px 40px -5px rgba(1,1,1,0.4);
+    height: 80px;
+    margin-left: -15px;
+    position: relative;
+    width: 340px;
+
+    -webkit-border-radius: 0.8em;
+    -moz-border-radius: 0.8em;
+    border-radius: 0.8em;
+}
+
+.santaclaus .chapeu::before {
+    box-shadow: 20px 20px 40px -5px rgba(1,1,1,0.3);
+    height: 80px;
+    left: -120px;
+    position: absolute;
+    top: 80px;
+    width: 80px;
+    z-index: 111;
+
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.santaclaus .face {
+    background-color: #ffccbc;
+    box-shadow: 0px 0px 30px 5px rgba(1,1,1,0.3);
+    content: " ";
+    display: block;
+    height: 130px;
+    position: relative;
+    top: -10px;
+    width: 300px;
+}
+
+.santaclaus > .orelhas {
+    background-color: #eea2ad;
+    box-shadow: 0px 0px 30px 5px rgba(1,1,1,0.3);
+    display: block;
+    height: 60px;
+    margin: 0 auto;
+    position: relative;
+    top: -125px;
+    width: 330px;
+    z-index: -1;
+
+    -webkit-border-radius: 1em 1em 2em 2em;
+    -moz-border-radius: 1em 1em 2em 2em;
+    border-radius: 1em 1em 2em 2em;
+}
+
+.santaclaus .face > .eyes {
+    display: inline-block;
+    height: 0px;
+    margin: 20px auto 0;
+    max-width: 160px;
+    width: 100%;
+}
+
+.santaclaus .face > .eyes::before,
+.santaclaus .face > .eyes::after {
+    background-color: #111;
+    content: " ";
+    display: inline-block;
+    float: left;
+    height: 20px;
+    width: 20px;
+
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.santaclaus .face > .eyes::after {
+    float: right;
+}
+
+.santaclaus .face > .nariz {
+    background-color: #EEA2AD;
+    height: 50px;
+    margin: 0 auto;
+    position: relative;
+    width: 70px;
+    z-index: 111;
+
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.santaclaus .face > .barba {
+    background-color: #ecf0f1;
+    box-shadow: -10px 10px 10px -5px rgba(1,1,1,0.3);
+    height: 240px;
+    margin: 0 auto;
+    position: relative;
+    top: -30px;
+    width: 340px;
+    left: -20px;
+
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+
+    -webkit-border-radius: 0% 100% 70% 100%;
+    -moz-border-radius: 0% 100% 70% 100%;
+    border-radius: 0% 100% 70% 100%;
+
+    -webkit-animation: animaBarba 1.6s ease-in-out infinite alternate;
+    -moz-animation: animaBarba 1.6s ease-in-out infinite alternate;
+    animation: animaBarba 1.6s ease-in-out infinite alternate;
+}
+
+.santaclaus .face > .barba > .boca {
+    height: 50px;
+    left: 30px;
+    margin: 0 auto;
+    position: relative;
+    top: 20px;
+    width: 60px;
+
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+
+    -webkit-animation: hoho 1.6s ease-in-out infinite alternate;
+    -moz-animation: hoho 1.6s ease-in-out infinite alternate;
+    animation: hoho 1.6s ease-in-out infinite alternate;
+}
+
+.hohoho {
+    height: 0;
+    padding-top: 200px;
+    width: 150px;
+
+    -webkit-animation: txtHohoho 1.6s ease-in-out infinite alternate;
+    -moz-animation: txtHohoho 1.6s ease-in-out infinite alternate;
+    animation: txtHohoho 1.6s ease-in-out infinite alternate;
+}
+
+.hohoho h2::before {
+    text-shadow: 0px 10px 20px rgba(1,1,1,0.4);
+    color: #fff;
+    content: "HO";
+    font-size: 62px;
+    line-height: 1.4em;
+}
+
+/*Texto Hohoho do lado direito*/
+.hohoho:last-of-type h2 {
+    margin: 0 10px 30px;
+    text-align: right;
+}
+
+.hohoho:last-of-type h2:nth-child(2) {margin-right: -50px;}
+.hohoho:last-of-type h2:first-child,
+.hohoho:last-of-type h2:last-child {
+    -webkit-animation: txtHohohoRight 1.6s ease-in-out infinite alternate;
+    -moz-animation: txtHohohoRight 1.6s ease-in-out infinite alternate;
+    animation: txtHohohoRight 1.6s ease-in-out infinite alternate;
+}
+
+/*Texto Hohoho do lado esquerdo*/
+.hohoho:first-of-type h2 {
+    margin: 0 50px 30px 0;
+    text-align: left;
+}
+
+.hohoho:first-of-type h2:nth-child(2) {margin-left: -60px;}
+.hohoho:first-of-type h2:first-child,
+.hohoho:first-of-type h2:last-child {
+    -webkit-animation: txtHohohoLeft 1.6s ease-in-out infinite alternate;
+    -moz-animation: txtHohohoLeft 1.6s ease-in-out infinite alternate;
+    animation: txtHohohoLeft 1.6s ease-in-out infinite alternate;
+}
+
+/*Texto Ho do meio em ambos os lados*/
+.hohoho h2:nth-child(2) {
+    -webkit-animation: txtHohohoMiddle 1.6s ease-in-out infinite alternate;
+    -moz-animation: txtHohohoMiddle 1.6s ease-in-out infinite alternate;
+    animation: txtHohohoMiddle 1.6s ease-in-out infinite alternate;
+}
+
+/**************
+** Animações **
+***************/
+
+/*FadeIn e fadeOut para textos Hohoho*/
+@keyframes txtHohoho {
+    from {opacity: .2}
+    to {opacity: 1}
+}
+
+/*Texto Ho do meio em ambos os lados*/
+@-webkit-keyframes txtHohohoMiddle {
+    from {-webkit-transform: scale(1.5);}
+    to {-webkit-transform: scale(1);}
+}
+@-moz-keyframes txtHohohoMiddle {
+    from {-moz-transform: scale(1.5);}
+    to {-moz-transform: scale(1);}
+}
+@keyframes txtHohohoMiddle {
+    from {transform: scale(1.5);}
+    to {transform: scale(1);}
+}
+
+/*Hohoho do lado esquerdo*/
+@-webkit-keyframes txtHohohoLeft {
+    to {-webkit-transform: scale(1.5);}
+}
+@-moz-keyframes txtHohohoLeft {
+    to {-moz-transform: scale(1.5);}
+}
+@keyframes txtHohohoLeft {
+    to {transform: scale(1.5);}
+}
+
+/*Hohoho do lado direito*/
+@-webkit-keyframes txtHohohoRight {
+    to {-webkit-transform: scale(1.5);}
+}
+@-moz-keyframes txtHohohoRight {
+    to {-moz-transform: scale(1.5);}
+}
+@keyframes txtHohohoRight {
+    to {transform: scale(1.5);}
+}
+
+/*Movimenta barba*/
+@-webkit-keyframes animaBarba {
+    to {-webkit-transform: rotate(-10deg);}
+}
+@-moz-keyframes animaBarba {
+    to {-moz-transform: rotate(-10deg);}
+}
+@keyframes animaBarba {
+    to {transform: rotate(-10deg);}
+}
+
+/*Hoho no movimento da boca*/
+@-webkit-keyframes hoho {
+    0% {
+        background-color: #ecf0f1;
+        box-shadow: 0px 20px 0 0 #111;
+            height: 40px;
+        width: 60px;
+    }
+
+    60%  {
+        background-color: #ecf0f1;
+        box-shadow: 0px 60px 0 0 #111;
+            height: 60px;
+        width: 30px;
+    }
+
+    80%  {
+        background-color: #ecf0f1;
+        box-shadow: 0px 60px 0 0 #111;
+            height: 50px;
+        width: 40px;
+    }
+
+    100%  {
+        background-color: #ecf0f1;
+        box-shadow: 0px 60px 0 0 #111;
+            height: 60px;
+        width: 30px;
+    }
+}
+@-moz-keyframes hoho {
+    0% {
+        background-color: #ecf0f1;
+        box-shadow: 0px 20px 0 0 #111;
+            height: 40px;
+        width: 60px;
+    }
+
+    60%  {
+        background-color: #ecf0f1;
+        box-shadow: 0px 60px 0 0 #111;
+            height: 60px;
+        width: 30px;
+    }
+
+    80%  {
+        background-color: #ecf0f1;
+        box-shadow: 0px 60px 0 0 #111;
+            height: 50px;
+        width: 40px;
+    }
+
+    100%  {
+        background-color: #ecf0f1;
+        box-shadow: 0px 60px 0 0 #111;
+            height: 60px;
+        width: 30px;
+    }
+}
+@keyframes hoho {
+    0% {
+        background-color: #ecf0f1;
+        box-shadow: 0px 20px 0 0 #111;
+            height: 40px;
+        width: 60px;
+    }
+
+    60%  {
+        background-color: #ecf0f1;
+        box-shadow: 0px 60px 0 0 #111;
+            height: 60px;
+        width: 30px;
+    }
+
+    80%  {
+        background-color: #ecf0f1;
+        box-shadow: 0px 60px 0 0 #111;
+            height: 50px;
+        width: 40px;
+    }
+
+    100%  {
+        background-color: #ecf0f1;
+        box-shadow: 0px 60px 0 0 #111;
+            height: 60px;
+        width: 30px;
+    }
+}
+/* XXXXXXXXXXXXXXXXXX FIN PERE NOEL OHOH XXXXXXXXXXXXXXXXXX */
+.reindeer {
+    transform: scale(1) rotateZ(-2deg);
+    position: absolute;
+    top: 50%;
+    right: 0;
+    bottom: 0;
+    left: 50%;
+    margin: auto;
+    border-top: solid 25px transparent;
+    border-right: solid 150px #dab48c;
+    width: 0px;
+    height: 60px;
+  }
+  .reindeer:before {
+    content: '';
+    position: absolute;
+    top: -25px;
+    left: 150px;
+    border-left: solid 50px #e6cdb2;
+    border-bottom: solid 40px transparent;
+    width: 0px;
+    height: 45px;
+  }
+  .reindeer:after {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: 150px;
+    border-left: solid 20px transparent;
+    border-bottom: solid 25px #e6cdb2;
+    width: 30px;
+    height: 0px;
+    z-index: -1;
+  }
+  
+  .head {
+    content: '';
+    position: absolute;
+    top: -80px;
+    left: 160px;
+    background-color: #dab48c;
+    border-radius: 0px 0px 15px 15px;
+    width: 40px;
+    height: 55px;
+    animation: 10s tilt ease-in-out infinite;
+  }
+  .head:before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -20px;
+    border-left: solid 20px transparent;
+    border-top: solid 20px #dab48c;
+    width: 0px;
+    height: 0px;
+    z-index: 1;
+  }
+  .head:after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 40px;
+    border-right: solid 20px transparent;
+    border-top: solid 20px #dab48c;
+    width: 0px;
+    height: 0px;
+    z-index: 1;
+  }
+  
+  .eyes-and-nose {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    margin: 30px auto;
+    background-color: #FF0000;
+    box-shadow: 0px 0px 4px 4px #FF0000;
+    animation: 5s glow infinite ease-in-out;
+  }
+  .eyes-and-nose:before {
+    content: '';
+    position: absolute;
+    top: 18px;
+    right: 4px;
+    border-right: solid 6px transparent;
+    border-top: solid 6px #774916;
+    width: 0px;
+    height: 0px;
+    animation: 5s blink infinite linear;
+  }
+  .eyes-and-nose:after {
+    content: '';
+    position: absolute;
+    top: 18px;
+    left: 4px;
+    border-left: solid 6px transparent;
+    border-top: solid 6px #774916;
+    width: 0px;
+    height: 0px;
+    animation: 5s blink infinite linear;
+  }
+  
+  .antlers {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 65px;
+    left: 0;
+    margin: auto;
+  }
+  .antlers:before {
+    content: '';
+    top: 0px;
+    position: absolute;
+    width: 40px;
+    height: 12px;
+    background-color: #dab48c;
+    z-index: 1;
+  }
+  
+  .outside-antler-trunk {
+    position: absolute;
+    top: -50px;
+    width: 8px;
+    height: 60px;
+    background-color: #563107;
+    transform-origin: 4px 52px;
+  }
+  .outside-antler-trunk.left {
+    position: absolute;
+    left: 0;
+    transform: rotateZ(-45deg);
+  }
+  .outside-antler-trunk.right {
+    position: absolute;
+    right: 0;
+    transform: rotateZ(45deg) rotateY(180deg);
+  }
+  .outside-antler-trunk:before {
+    content: '';
+    position: absolute;
+    top: -45px;
+    left: 10px;
+    width: 8px;
+    height: 50px;
+    background-color: #563107;
+    transform: rotateZ(25deg);
+  }
+  .outside-antler-trunk:after {
+    content: '';
+    position: absolute;
+    top: -63px;
+    left: 32px;
+    width: 8px;
+    height: 30px;
+    background-color: #563107;
+    border-radius: 4px 4px 0px 0px;
+    transform: rotateZ(60deg);
+  }
+  
+  .antler-branches {
+    position: absolute;
+    top: -40px;
+    width: 8px;
+    height: 30px;
+    background-color: #563107;
+    z-index: -1;
+    border-radius: 4px 4px 0px 0px;
+    transform-origin: 4px 35px;
+  }
+  .antler-branches.left {
+    transform: rotateZ(55deg);
+  }
+  .antler-branches.right {
+    transform: rotateZ(55deg) rotateY(180deg);
+  }
+  
+  .inside-antler {
+    position: absolute;
+    top: -12px;
+    width: 8px;
+    height: 20px;
+    background-color: #563107;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    border-radius: 0px 0px 4px 4px;
+  }
+  .inside-antler:before {
+    content: '';
+    position: absolute;
+    top: -18px;
+    left: 5px;
+    width: 8px;
+    height: 20px;
+    background-color: #563107;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    border-radius: 4px 4px 0px 0px;
+    transform: rotateZ(15deg);
+  }
+  .inside-antler.left {
+    position: absolute;
+    left: 3px;
+    transform: rotateZ(-30deg);
+  }
+  .inside-antler.right {
+    position: absolute;
+    right: 3px;
+    transform: rotateZ(30deg) rotateY(180deg);
+  }
+  
+  .tail {
+    content: '';
+    position: absolute;
+    top: -19px;
+    left: -15px;
+    border-top: 15px solid transparent;
+    border-left: 20px solid #c1823f;
+    width: 0px;
+    height: 0px;
+    transform-origin: 20px 20px;
+    transform: rotateZ(-75deg);
+    animation: 15s flap ease-in-out infinite;
+  }
+  
+  .legs {
+    position: absolute;
+    top: 59px;
+  }
+  .legs div {
+    position: absolute;
+  }
+  
+  .leg-rear-right {
+    width: 10px;
+    border-top: 30px solid #dab48c;
+    border-right: 45px solid transparent;
+    z-index: 1;
+  }
+  .leg-rear-right:before {
+    content: '';
+    position: absolute;
+    top: -40px;
+    left: 5px;
+    width: 10px;
+    height: 70px;
+    background-color: #dab48c;
+    transform: rotateZ(55deg);
+  }
+  .leg-rear-right:after {
+    content: '';
+    position: absolute;
+    top: 11px;
+    left: -23px;
+    width: 10px;
+    height: 60px;
+    background-color: #dab48c;
+    transform: rotateZ(2deg);
+    border-radius: 0px 0px 10px 10px;
+  }
+  
+  .leg-rear-left {
+    width: 10px;
+    left: 34px;
+    border-top: 25px solid #cd9b65;
+    border-right: 15px solid transparent;
+  }
+  .leg-rear-left:before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -6px;
+    width: 10px;
+    height: 30px;
+    background-color: #cd9b65;
+    transform: rotateZ(29deg);
+  }
+  .leg-rear-left:after {
+    content: '';
+    position: absolute;
+    top: 16px;
+    left: 0px;
+    width: 10px;
+    height: 60px;
+    background-color: #cd9b65;
+    transform: rotateZ(-25deg);
+    border-radius: 0px 0px 10px 10px;
+  }
+  
+  .leg-front-right {
+    width: 10px;
+    left: 115px;
+    border-top: 20px solid #dab48c;
+    border-left: 25px solid transparent;
+    z-index: 1;
+  }
+  .leg-front-right:before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: 2px;
+    width: 10px;
+    height: 30px;
+    background-color: #dab48c;
+    transform: rotateZ(-10deg);
+  }
+  .leg-front-right:after {
+    content: '';
+    position: absolute;
+    top: 24px;
+    left: 11px;
+    width: 10px;
+    height: 60px;
+    background-color: #dab48c;
+    transform: rotateZ(-13deg);
+    border-radius: 0px 0px 10px 10px;
+  }
+  
+  .leg-front-left {
+    width: 10px;
+    left: 110px;
+    border-top: 20px solid #cd9b65;
+    border-left: 15px solid transparent;
+  }
+  .leg-front-left:before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 30px;
+    left: 1px;
+    top: -1px;
+    background-color: #cd9b65;
+    transform: rotateZ(-5deg);
+  }
+  .leg-front-left:after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 55px;
+    left: 6px;
+    top: 27px;
+    background-color: #cd9b65;
+    transform: rotateZ(-8deg);
+    border-radius: 0px 0px 10px 10px;
+  }
+  
+  .ground {
+    background-color: #F5F5F5;
+    width: 5000px;
+    margin: auto;
+    height: 1000px;
+    position: absolute;
+    top: 152px;
+    left: -2500px;
+    z-index: 0;
+    transform: rotate(0deg);
+  }
+  
+  body {
+    margin: 0px;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  @keyframes glow {
+    0% {
+      box-shadow: 0px 0px 4px 4px #FF0000;
+    }
+    50% {
+      box-shadow: 0px 0px 20px 10px #FF0000;
+    }
+  }
+  @keyframes blink {
+    0% {
+      top: 18px;
+      border-top: solid 6px #774916;
+    }
+    2% {
+      top: 21px;
+      border-top: solid 0px #774916;
+    }
+    4% {
+      top: 18px;
+      border-top: solid 6px #774916;
+    }
+    30% {
+      top: 18px;
+      border-top: solid 6px #774916;
+    }
+    32% {
+      top: 21px;
+      border-top: solid 0px #774916;
+    }
+    34% {
+      top: 18px;
+      border-top: solid 6px #774916;
+    }
+  }
+  @keyframes flap {
+    0% {
+      transform: rotateZ(-75deg);
+    }
+    1% {
+      transform: rotateZ(-30deg);
+    }
+    2% {
+      transform: rotateZ(-75deg);
+    }
+    3% {
+      transform: rotateZ(-30deg);
+    }
+    4% {
+      transform: rotateZ(-75deg);
+    }
+    68% {
+      transform: rotateZ(-75deg);
+    }
+    69% {
+      transform: rotateZ(-30deg);
+    }
+    70% {
+      transform: rotateZ(-75deg);
+    }
+  }
+  @keyframes tilt {
+    0% {
+      transform: rotateZ(0deg);
+    }
+    5% {
+      transform: rotateZ(5deg);
+    }
+    15% {
+      transform: rotateZ(5deg);
+    }
+    20% {
+      transform: rotateZ(0deg);
+    }
+  }
+  /* XXXXXXXXXXXXXXXXXX FIN PETIT REINE XXXXXXXXXXXXXXXXXX */
+
+.headline {
+    margin-bottom: .5em;
+    color: #b81313;
+    font-family: 'Mountains of Christmas', cursive;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0 .05em .1em #fff;
+    animation-name: hover;
+    animation-iteration-count: infinite;
+    animation-duration: 3.5s;
+    position: absolute;
+    font-size: 70px;
+    left: 5%;
+}
+@keyframes hover {
+    0% {
+      transform: translate3d(0, 0, 0);
+      color: #b81313;
+    }
+    50% {
+      transform: translate3d(0, -0.2em, 0);
+      color: #db3e3e;
+    }
+    100% {
+      transform: translate3d(0, 0, 0);
+      color: #b81313;
+    }
+}
+  @keyframes pulse {
+    0% {
+      box-shadow: 0px 0px 0.3em rgba(255, 255, 255, 0.8);
+    }
+    50% {
+      box-shadow: 0px 0px 0.3em rgba(255, 255, 255, 0.4);
+    }
+    100% {
+      box-shadow: 0px 0px 0.3em rgba(255, 255, 255, 0.8);
+    }
+}
+#wish{
+    bottom: 30%;
+}
+#merry{
+    bottom: 18%;
+}
+#year{
+    bottom: 6%;
+}
+ /* XXXXXXXXXXXXXXXXXX FIN TEXTE XXXXXXXXXXXXXXXXXX */
+.opacity{
+    opacity: 1;
+    animation: apparition 1s ease-in-out;
+}
+ #formulaire{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    top: 40px;
+    right: 80px;
+    color: white;
+    font-size: 15px;
+    align-items: center;
+    background-color: rgba(1,1,1,0.3);
+    padding: 10px 0;
+    background-image: url('img/houx.png');
+    background-size: cover;
+}
+@keyframes apparition{
+    0%{
+        right:-1000px;
+    }
+    100%{
+        right: 80px;
+    }
+}
+form{
+    opacity: 0;
+}
+
+.titre{
+    font-size: 18px;
+    margin: 0;
+    font-weight: bold;
+}
+#form label{
+    padding: 10px 0;
+}
+textarea{
+    font-family: 'Montserrat', sans-serif;
+    resize: none;
+    margin-bottom: 10px;
+}
+#nom, #mail, #message{
+    width: 50%;
+}
+#form button{
+    border-radius: 10px;
+    background-color: #b81313;
+    border: 2px solid #b81313;
+    color: white;
+    font-weight: bold;
+}
+#form button:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+}
+#div-boule{
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-end;
+    right: 50px; 
+}
+.img-boule{
+    position: absolute;
+    width: 120px;
+    height: 350px;
+    display: flex;
+}
+.img-click{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 350px;
+    right: 20px;
+}
+.img-boule, .img-click:hover{
+    cursor: pointer;
+
+}

@@ -1,0 +1,40 @@
+@media(max-width: 576px){
+
+}
+
+@media(max-width: 768px){
+
+}
+
+@media(max-width: 992px){
+
+}
+
+@media(max-width: 1200px){
+
+}
+
+/* <mjml>
+  <mj-font name="Lobster" href="https://fonts.googleapis.com/css?family=Lobster" />
+  <mj-body background-color="#feec8e">
+    <mj-section>
+      <mj-column>
+
+        <mj-image width="500px" src="https://www.agence-lapostolle.com/wp-content/uploads/2018/12/guirlandenoel.png"></mj-image>
+
+        <mj-divider border-color="#d32f2f"></mj-divider>
+
+        <mj-text font-size="40px" align="center" font-family="helvetica">Vous avez reçu une carte de voeux de la part de :<br></br></mj-text>   
+        
+                <mj-image width="100px" src="https://i.pinimg.com/originals/e8/39/12/e8391252164fabc7b9ee5f0af989cff4.png"></mj-image>
+        
+        <mj-text align="center" font-size="30px" color="#d32f2f"><br></br>blablabla<br></br></mj-text>
+        
+<mj-button font-size="20px" font-family="Helvetica" background-color="#d32f2f" color="white" border-radius="10px">
+          CLIQUEZ ICI POUR LA VOIR!
+         </mj-button>
+        
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml> */
