@@ -107,15 +107,35 @@ init();
 var boule=document.getElementById("cliquez");
 var form=document.getElementById("formulaire");
 
-boule.addEventListener('click', function(e) {
-e.preventDefault();
-form.classList.toggle("opacity");
+$('#cliquez').on('click', function(){
+    $('#formulaire').slideToggle(1000)
 })
 
-var boule2=document.getElementById("boule");
-var form=document.getElementById("formulaire");
+// boule.addEventListener('click', function(e) {
+// e.preventDefault();
+// form.classList.toggle("opacity");
+// })
 
-boule2.addEventListener('click', function(e) {
-e.preventDefault();
-form.classList.toggle("opacity");
-})
+// var boule2=document.getElementById("boule");
+// var form=document.getElementById("formulaire");
+
+// boule2.addEventListener('click', function(e) {
+// e.preventDefault();
+// form.classList.toggle("opacity");
+// })
+
+/* XXXXXXXXXXXXXXXXXX FIN APPARITION FORM XXXXXXXXXXXXXXXXXX */
+
+
+
+// let close = document.querySelector("#fermer");
+
+// fermer.addEventListener('click', function(e) {
+//     e.preventDefault();
+//     form.classList.add("close");
+//     setTimeout(() => {
+//         form.classList.remove("opacity");
+//     }, 2000);
+// })
+
+/* XXXXXXXXXXXXXXXXXX FIN DISPARITION FORM XXXXXXXXXXXXXXXXXX */
