@@ -927,7 +927,9 @@ ul {
   background-image: url('img/bord.png');
   background-size: cover;
 }
-
+#form{
+  display: none;
+}
 #fermer{
   width: 5%;
   height: auto;
@@ -952,11 +954,17 @@ textarea{
   resize: none;
   margin-bottom: 5px;
 }
+.transmise{
+  font-family: 'Courier Prime', sans-serif;
+  font-weight: bold;
+  color: red;
+}
 .error {
   font-size: 0.8rem;
   color: red;
   margin-top: 5px;
   margin-bottom: 15px;
+  font-family: 'Courier Prime', sans-serif;
 }
 #nom, #mail, #message{
   width: 50%;
@@ -995,15 +1003,3 @@ textarea{
 .img-boule, .img-click:hover{
   cursor: pointer;
 }
-/* .close {
-  animation: formdown 2s linear;
-}
-
-@keyframes formdown {
-  from {
-      height: 394px;
-  }
-  to {
-      height: 0;
-  }
-} */

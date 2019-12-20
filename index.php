@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">    <link href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas:400,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courier+Prime:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/style.css">
 
     <title>Carte de voeux</title>
@@ -110,24 +111,22 @@
 <div id="form">
     <form id="formulaire" action="mail.php" method="POST" role="form">
 
-			<img src="assets/img/close.svg" alt="Fermer" class="fermer" id="fermer">
-
         <p class="titre">ENVOYEZ VOTRE CARTE DE VOEUX</p>
         <label for="nom">NOM :</label>
         <input id="nom" type="text" name="nom" placeholder="Entrez votre nom">
-        <p class="error"></p>
+        <p id="error-name" class="error"></p>
 
         <label for="mail">E-MAIL :</label>
         <input id="mail" type="mail" name="mail" placeholder="Entrez l'email du destinataire">
-        <p class="error"></p>
+        <p id="error-mail" class="error"></p>
 
         <label for="mymail">VOTRE E-MAIL :</label>
         <input id="mymail" type="mail" name="mymail" placeholder="Entrez votre email">        
-        <p class="error"></p>
+        <p id="error-mymail" class="error"></p>
 
         <label for="message">MESSAGE :</label>
         <textarea name="message" id="message" placeholder="Entrez votre message" rows="8" cols="50"></textarea>
-        <p class="error"></p>
+        <p id="error-message" class="error"></p>
 
         <input type="submit" id="submit" name="submit" value="Envoyer">
 
@@ -135,8 +134,8 @@
 </div>
 
 
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script src="assets/script.js"></script>
+<script src="mail.js"></script>
 </body>
 </html>

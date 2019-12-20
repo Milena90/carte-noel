@@ -105,37 +105,14 @@ init();
 /* XXXXXXXXXXXXXXXXXX FIN NEIGE QUI TOMBE XXXXXXXXXXXXXXXXXX */
 
 var boule=document.getElementById("cliquez");
-var form=document.getElementById("formulaire");
+var form=document.getElementById("form");
+var boule2=document.getElementById("boule");
 
 $('#cliquez').on('click', function(){
-    $('#formulaire').slideToggle(1000)
+    $('#form').toggle(1000)
 })
 
-// boule.addEventListener('click', function(e) {
-// e.preventDefault();
-// form.classList.toggle("opacity");
-// })
-
-// var boule2=document.getElementById("boule");
-// var form=document.getElementById("formulaire");
-
-// boule2.addEventListener('click', function(e) {
-// e.preventDefault();
-// form.classList.toggle("opacity");
-// })
-
+$('#boule').on('click', function(){
+    $('#form').toggle(1000)
+})
 /* XXXXXXXXXXXXXXXXXX FIN APPARITION FORM XXXXXXXXXXXXXXXXXX */
-
-
-
-// let close = document.querySelector("#fermer");
-
-// fermer.addEventListener('click', function(e) {
-//     e.preventDefault();
-//     form.classList.add("close");
-//     setTimeout(() => {
-//         form.classList.remove("opacity");
-//     }, 2000);
-// })
-
-/* XXXXXXXXXXXXXXXXXX FIN DISPARITION FORM XXXXXXXXXXXXXXXXXX */
